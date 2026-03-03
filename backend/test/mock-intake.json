@@ -1,0 +1,15 @@
+{
+  "company": "TestCorp SaaS",
+  "website": "https://testcorp.io",
+  "industry": "B2B SaaS - Project Management",
+  "targetAudience": "Product managers, engineering teams, companies with 50-500 employees",
+  "primaryGoal": "Increase inbound leads through AI-powered search visibility (Perplexity, ChatGPT, Claude)",
+  "currentTraffic": "5,000 organic visitors/month",
+  "aiToolsAccess": "ChatGPT mentions us occasionally (~10% of queries), Perplexity never surfaces our brand",
+  "contentIndexed": "Blog (20 articles), Product documentation (50 pages), 3 case studies, Comparison pages (vs Asana, Monday.com)",
+  "competitorVisibility": "Asana and Monday.com appear in 80%+ of AI tool responses for 'project management software' queries. Notion appears in 60%+. We appear <5%.",
+  "seoEfforts": "Active SEO for 6 months, currently ranking #5-10 for 'project management tool' and related keywords. Monthly organic traffic growing 15%.",
+  "timestamp": "2026-03-03T22:30:00Z",
+  "contactEmail": "contact@testcorp.io",
+  "contactName": "Alex Johnson"
+}
