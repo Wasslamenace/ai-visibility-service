@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Visibility Audit | Is ChatGPT Recommending Your Brand?</title>
+    <meta name="description" content="Find out if AI models like ChatGPT, Gemini, and Claude recommend your brand. Professional audit in 48-72h. $200-500.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafb;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6366f1;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .problem {
+            padding: 60px 0;
+            background: white;
+        }
+        
+        .problem h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .problem-card {
+            background: #f9fafb;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .problem-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        
+        .solution {
+            padding: 60px 0;
+            background: #f9fafb;
+        }
+        
+        .solution h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .solution-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 40px;
+        }
+        
+        .audit-details {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+        
+        .audit-details ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .audit-details li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+        }
+        
+        .audit-details li:before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 20px;
+        }
+        
+        .pricing {
+            padding: 60px 0;
+            background: white;
+        }
+        
+        .pricing h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+        }
+        
+        .pricing-card.featured {
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .pricing-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .pricing-card .price {
+            font-size: 48px;
+            font-weight: 800;
+            color: #667eea;
+            margin: 20px 0;
+        }
+        
+        .pricing-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 20px 0;
+        }
+        
+        .pricing-card li {
+            padding: 8px 0;
+            color: #6b7280;
+        }
+        
+        .pricing-card li:before {
+            content: "✓";
+            color: #10b981;
+            margin-right: 8px;
+        }
+        
+        .social-proof {
+            padding: 60px 0;
+            background: #f9fafb;
+        }
+        
+        .social-proof h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .stat {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #6b7280;
+            margin-top: 10px;
+        }
+        
+        .faq {
+            padding: 60px 0;
+            background: white;
+        }
+        
+        .faq h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .faq-item {
+            background: #f9fafb;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .faq-item h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .pricing-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AI Visibility Audit</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Is ChatGPT Recommending Your Brand?</h1>
+            <p>Find out if AI models like ChatGPT, Gemini, Claude & Perplexity recommend your product to users.</p>
+            <a href="#pricing" class="cta-button">Get Your Audit →</a>
+        </div>
+    </section>
+
+    <section class="problem">
+        <div class="container">
+            <h2>The Problem: You're Invisible to AI</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3>🤖 Users Ask AI First</h3>
+                    <p>40% of product searches now start with ChatGPT/Gemini instead of Google. If AI doesn't know you, you don't exist.</p>
+                </div>
+                <div class="problem-card">
+                    <h3>🏆 Competitors Win By Default</h3>
+                    <p>When AI recommends 3-5 products, your competitors are getting mentioned. You're not. That's lost revenue.</p>
+                </div>
+                <div class="problem-card">
+                    <h3>📉 SEO Isn't Enough</h3>
+                    <p>Great Google ranking? Doesn't matter if AI models ignore you. They use different sources, different criteria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution">
+        <div class="container">
+            <h2>What We Do</h2>
+            <p class="solution-subtitle">We test 50 real-world prompts across 4 AI models to see if they recommend your brand.</p>
+            
+            <div class="audit-details">
+                <h3 style="font-size: 24px; margin-bottom: 20px;">Your AI Visibility Audit Includes:</h3>
+                <ul>
+                    <li>50 industry-specific prompts tested (buying intent, comparisons, problem-solving)</li>
+                    <li>4 AI models analyzed (ChatGPT, Gemini, Claude, Perplexity)</li>
+                    <li>Visibility score (0-100%) vs your top 3 competitors</li>
+                    <li>Source citation audit (where AI gets its info about you)</li>
+                    <li>90-day action plan (quick wins + long-term strategy)</li>
+                    <li>Delivered in 48-72h (PDF report + Google Sheets data)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Choose Your Package</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$200</div>
+                    <ul>
+                        <li>25 prompts tested</li>
+                        <li>3 AI models (ChatGPT, Gemini, Claude)</li>
+                        <li>Visibility score report</li>
+                        <li>Quick wins action plan</li>
+                        <li>48-72h delivery</li>
+                    </ul>
+                    <a href="mailto:contact@example.com?subject=Basic Audit Request" class="cta-button" style="margin-top: 20px; display: inline-block; font-size: 16px; padding: 12px 24px;">Get Started</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Pro</h3>
+                    <div class="price">$350</div>
+                    <ul>
+                        <li>50 prompts tested</li>
+                        <li>4 AI models (+ Perplexity)</li>
+                        <li>Competitor comparison (top 3)</li>
+                        <li>Source citation audit</li>
+                        <li>90-day action roadmap</li>
+                        <li>48-72h delivery</li>
+                    </ul>
+                    <a href="mailto:contact@example.com?subject=Pro Audit Request" class="cta-button" style="margin-top: 20px; display: inline-block; font-size: 16px; padding: 12px 24px;">Most Popular</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">$500</div>
+                    <ul>
+                        <li>100 prompts tested</li>
+                        <li>4 AI models</li>
+                        <li>3 competitors analyzed</li>
+                        <li>Custom prompt library</li>
+                        <li>Monthly check-in call</li>
+                        <li>Priority 48h delivery</li>
+                    </ul>
+                    <a href="mailto:contact@example.com?subject=Enterprise Audit Request" class="cta-button" style="margin-top: 20px; display: inline-block; font-size: 16px; padding: 12px 24px;">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="container">
+            <h2>Why This Matters</h2>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Product searches start with AI (2026)</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">3-5</div>
+                    <div class="stat-label">Products recommended per AI query</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">60%</div>
+                    <div class="stat-label">Users trust AI recommendations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>Why should I care if AI recommends me?</h3>
+                <p>Because 40% of your potential customers are asking AI instead of Google. If AI doesn't recommend you, you're invisible to them.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How is this different from SEO?</h3>
+                <p>SEO optimizes for Google's algorithm. AI models use different sources (forums, reviews, GitHub, podcasts). You need a separate strategy.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I fix my AI visibility?</h3>
+                <p>Yes. Our action plan shows you exactly where to get cited, what content to create, and how to optimize for AI recommendations.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How long does it take?</h3>
+                <p>48-72 hours from payment to delivered report. You'll get a PDF + Google Sheets with all data.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What industries do you cover?</h3>
+                <p>B2B SaaS, e-commerce tools, agencies, dev tools. If you have competitors that AI might recommend instead of you, we can audit you.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AI Visibility Services. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 14px; opacity: 0.7;">Email: contact@example.com</p>
+        </div>
+    </footer>
+</body>
+</html>
