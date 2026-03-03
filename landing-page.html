@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional AI Visibility Audits for B2B SaaS. Identify gaps in ChatGPT, Perplexity, Claude, and Gemini. Get actionable 90-day roadmap.">
+  <meta name="keywords" content="AI visibility, ChatGPT SEO, Perplexity optimization, AI search, B2B SaaS marketing">
+  <title>AI Visibility Audit Service — Turn AI Search Into Your Growth Engine</title>
+  
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+    
+    /* Accessibility: WCAG AA+ (7:1 contrast minimum) */
+    a { color: #0052cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:focus { outline: 3px solid #0052cc; outline-offset: 2px; }
+    
+    /* Container */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    /* Header */
+    header {
+      background: #0a0a0a;
+      color: #ffffff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    header .container { display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.5rem; font-weight: 700; }
+    header nav a { color: #ffffff; margin-left: 30px; font-weight: 500; }
+    header nav a:hover { color: #ffa500; text-decoration: none; }
+    
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #0052cc 0%, #0033a0 100%);
+      color: #ffffff;
+      padding: 100px 0;
+      text-align: center;
+    }
+    
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      opacity: 0.95;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: #ffa500;
+      color: #0a0a0a;
+      padding: 18px 40px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    
+    .cta-button:hover {
+      background: #ff8c00;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+    
+    .cta-button:focus {
+      outline: 3px solid #ffffff;
+      outline-offset: 4px;
+    }
+    
+    /* Section */
+    section {
+      padding: 80px 0;
+    }
+    
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #0a0a0a;
+    }
+    
+    section p {
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: #4a4a4a;
+    }
+    
+    /* Problem Section */
+    .problem {
+      background: #f5f5f5;
+    }
+    
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .problem-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .problem-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    
+    .problem-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #0052cc;
+    }
+    
+    .problem-card p {
+      text-align: left;
+      margin: 0;
+      color: #4a4a4a;
+    }
+    
+    /* Solution Section */
+    .solution {
+      background: #ffffff;
+    }
+    
+    .solution-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+    
+    .feature {
+      text-align: center;
+    }
+    
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #0a0a0a;
+    }
+    
+    .feature p {
+      font-size: 1rem;
+      color: #4a4a4a;
+    }
+    
+    /* Pricing Section */
+    .pricing {
+      background: #f5f5f5;
+    }
+    
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 60px;
+    }
+    
+    .pricing-card {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .pricing-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    
+    .pricing-card.featured {
+      border: 3px solid #0052cc;
+      position: relative;
+    }
+    
+    .pricing-card.featured::before {
+      content: "Most Popular";
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffa500;
+      color: #0a0a0a;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    
+    .pricing-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #0a0a0a;
+    }
+    
+    .pricing-card .price {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #0052cc;
+      margin-bottom: 10px;
+    }
+    
+    .pricing-card .price-note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    
+    .pricing-card ul {
+      list-style: none;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+    
+    .pricing-card li {
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+      color: #4a4a4a;
+    }
+    
+    .pricing-card li::before {
+      content: "✓ ";
+      color: #00cc66;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      background: #0052cc;
+      color: #ffffff;
+      text-align: center;
+      padding: 80px 0;
+    }
+    
+    .cta-section h2 {
+      color: #ffffff;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .cta-section p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      opacity: 0.95;
+    }
+    
+    .cta-section .cta-button {
+      background: #ffa500;
+      color: #0a0a0a;
+    }
+    
+    /* Footer */
+    footer {
+      background: #0a0a0a;
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 0;
+    }
+    
+    footer p {
+      margin: 10px 0;
+      color: #cccccc;
+    }
+    
+    footer a {
+      color: #ffa500;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      section h2 { font-size: 1.8rem; }
+      header nav a { margin-left: 15px; font-size: 0.9rem; }
+      .pricing-card .price { font-size: 2.5rem; }
+    }
+    
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.2rem; }
+      header nav { display: none; } /* Simplify for mobile */
+      .hero h2 { font-size: 1.5rem; }
+      .cta-button { padding: 15px 30px; font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>AI Visibility Audit</h1>
+      <nav>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Turn AI Search Into Your Growth Engine</h2>
+      <p>Your competitors are showing up in ChatGPT, Perplexity, and Claude. Are you?</p>
+      <a href="#cta" class="cta-button">Get Your AI Visibility Audit</a>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="problem">
+    <div class="container">
+      <h2>The Problem: You're Invisible to AI</h2>
+      <p>AI-powered search is replacing Google. If your brand doesn't appear in ChatGPT, Perplexity, Claude, and Gemini responses, you're losing customers to competitors who do.</p>
+      
+      <div class="problem-grid">
+        <div class="problem-card">
+          <h3>🔍 Low AI Visibility</h3>
+          <p>Your competitors appear in 80%+ of AI responses for your target keywords. You appear <5% (or never).</p>
+        </div>
+        
+        <div class="problem-card">
+          <h3>📉 Lost Inbound Leads</h3>
+          <p>Prospects use ChatGPT to research solutions. If you're not mentioned, they never discover your product.</p>
+        </div>
+        
+        <div class="problem-card">
+          <h3>❓ No Roadmap</h3>
+          <p>You know AI search matters, but have no idea how to improve your visibility or what content to create.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section id="solution" class="solution">
+    <div class="container">
+      <h2>The Solution: Professional AI Visibility Audit</h2>
+      <p>We analyze your current AI visibility across all major tools (ChatGPT, Perplexity, Claude, Gemini) and deliver a custom 90-day roadmap to fix it.</p>
+      
+      <div class="solution-features">
+        <div class="feature">
+          <div class="feature-icon">📊</div>
+          <h3>Current State Analysis</h3>
+          <p>Visibility score (0-100) across all AI tools, competitor benchmarking, content gap identification.</p>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">🎯</div>
+          <h3>Strategic Recommendations</h3>
+          <p>Prioritized action plan (high/medium/long-term), quick wins, content strategy, ROI projections.</p>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">🗓️</div>
+          <h3>90-Day Roadmap</h3>
+          <p>Month-by-month deliverables, expected traffic lift, actionable next steps you can execute immediately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2>Pricing</h2>
+      <p>Choose the package that fits your needs. All audits include a professional PDF report delivered within 3-5 business days.</p>
+      
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Starter Audit</h3>
+          <div class="price">$200</div>
+          <p class="price-note">Perfect for solopreneurs</p>
+          <ul>
+            <li>AI visibility assessment (4 tools)</li>
+            <li>Competitor benchmarking (top 3)</li>
+            <li>Content gap analysis</li>
+            <li>30-day quick wins list</li>
+            <li>PDF report (15-20 pages)</li>
+          </ul>
+          <a href="#cta" class="cta-button">Get Started</a>
+        </div>
+        
+        <div class="pricing-card featured">
+          <h3>Growth Audit</h3>
+          <div class="price">$350</div>
+          <p class="price-note">Most popular for growing SaaS</p>
+          <ul>
+            <li>Everything in Starter</li>
+            <li>Strategic recommendations (prioritized)</li>
+            <li>90-day roadmap (month-by-month)</li>
+            <li>ROI projections (traffic + leads)</li>
+            <li>30-min strategy call</li>
+            <li>PDF report (25-35 pages)</li>
+          </ul>
+          <a href="#cta" class="cta-button">Get Started</a>
+        </div>
+        
+        <div class="pricing-card">
+          <h3>Enterprise Audit</h3>
+          <div class="price">$500</div>
+          <p class="price-note">For established companies</p>
+          <ul>
+            <li>Everything in Growth</li>
+            <li>Multi-product analysis</li>
+            <li>Advanced competitor intelligence</li>
+            <li>Custom content calendar (12 weeks)</li>
+            <li>Implementation support (60 days)</li>
+            <li>PDF report (40-50 pages)</li>
+          </ul>
+          <a href="#cta" class="cta-button">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="cta-section">
+    <div class="container">
+      <h2>Ready to Become Visible?</h2>
+      <p>Get your professional AI visibility audit delivered in 3-5 business days. No fluff, just actionable insights.</p>
+      <a href="mailto:tallalwassim131@gmail.com?subject=AI%20Visibility%20Audit%20Request&body=Hi,%0D%0A%0D%0AI'd%20like%20to%20request%20an%20AI%20Visibility%20Audit.%0D%0A%0D%0ACompany:%20[Your%20Company]%0D%0AWebsite:%20[Your%20Website]%0D%0APackage:%20[Starter%20/%20Growth%20/%20Enterprise]%0D%0A%0D%0AThank%20you!" class="cta-button">Request Your Audit</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 AI Visibility Audit Service. All rights reserved.</p>
+      <p>Contact: <a href="mailto:tallalwassim131@gmail.com">tallalwassim131@gmail.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
